@@ -61,5 +61,10 @@ public class NiveauController {
         return niveauHelper.existsById(id);
     }
 
+    @GetMapping("/{id}/libelle")
+    public String getLibelleById(@PathVariable Long id) {
+        return niveauHelper.findById(id).getLibelle();
+    }
+
     // Ajoute ici les endpoints pour update, delete, etc.
 } 

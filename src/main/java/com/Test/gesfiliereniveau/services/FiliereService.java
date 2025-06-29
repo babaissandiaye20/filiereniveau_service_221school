@@ -61,4 +61,9 @@ public class FiliereService implements IFiliere {
     public boolean existsById(Long id) {
         return filiereRepository.existsById(id);
     }
+
+    @Override
+    public String getLibelleById(Long id) {
+        return filiereRepository.getLibelleById(id);
+    }
 } 

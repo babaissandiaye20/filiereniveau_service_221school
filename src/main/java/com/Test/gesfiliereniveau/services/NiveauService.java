@@ -61,4 +61,9 @@ public class NiveauService implements INiveau {
     public boolean existsById(Long id) {
         return niveauRepository.existsById(id);
     }
+
+    @Override
+    public String getLibelleById(Long id) {
+        return niveauRepository.getLibelleById(id);
+    }
 } 

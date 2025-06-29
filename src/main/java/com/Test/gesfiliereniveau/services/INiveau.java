@@ -13,4 +13,5 @@ public interface INiveau {
     void softDelete(Long id);
     Niveau update(Niveau niveau);
     boolean existsById(Long id);
+    String getLibelleById(Long id);
 } 

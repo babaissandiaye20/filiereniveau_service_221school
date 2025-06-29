@@ -10,4 +10,4 @@ spring:
       ddl-auto: update
       dialect: org.hibernate.dialect.PostgreSQLDialect
 server:
-  port: 8082 
+  port: 8082

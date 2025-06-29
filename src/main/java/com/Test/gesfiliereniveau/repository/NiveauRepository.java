@@ -19,4 +19,8 @@ public interface NiveauRepository extends JpaRepository<Niveau, Long> {
     List<Niveau> findAllNotDeleted();
 
     boolean existsById(Long id);
+
+    // Retourne le libellé du niveau par id
+    @Query("SELECT n.libelle FROM Niveau n WHERE n.id = :id")
+    String getLibelleById(Long id);
 } 

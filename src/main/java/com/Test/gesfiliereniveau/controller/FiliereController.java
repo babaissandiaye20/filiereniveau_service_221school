@@ -61,5 +61,10 @@ public class FiliereController {
         return filiereHelper.existsById(id);
     }
 
+    @GetMapping("/{id}/libelle")
+    public String getLibelleById(@PathVariable Long id) {
+        return filiereHelper.findById(id).getLibelle();
+    }
+
     // Ajoute ici les endpoints pour update, delete, etc.
 } 

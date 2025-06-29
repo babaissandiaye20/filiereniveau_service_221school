@@ -13,4 +13,5 @@ public interface IFiliere {
     void softDelete(Long id);
     Filiere update(Filiere filiere);
     boolean existsById(Long id);
+    String getLibelleById(Long id);
 } 

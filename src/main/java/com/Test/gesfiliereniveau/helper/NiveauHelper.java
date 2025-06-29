@@ -44,5 +44,9 @@ public class NiveauHelper {
         return iNiveau.existsById(id);
     }
 
+    public String getLibelleById(Long id) {
+        return iNiveau.getLibelleById(id);
+    }
+
     // Méthodes update et delete à adapter selon besoin
 } 

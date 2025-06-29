@@ -44,5 +44,9 @@ public class FiliereHelper {
         return iFiliere.existsById(id);
     }
 
+    public String getLibelleById(Long id) {
+        return iFiliere.getLibelleById(id);
+    }
+
     // Méthodes update et delete à adapter selon besoin
 } 

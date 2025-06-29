@@ -19,4 +19,8 @@ public interface FiliereRepository extends JpaRepository<Filiere, Long> {
     List<Filiere> findAllNotDeleted();
 
     boolean existsById(Long id);
+
+    // Retourne le libellé de la filière par id
+    @Query("SELECT f.libelle FROM Filiere f WHERE f.id = :id")
+    String getLibelleById(Long id);
 } 
